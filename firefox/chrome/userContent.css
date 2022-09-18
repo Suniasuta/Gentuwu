@@ -1,0 +1,31 @@
+/* Imagetab */
+@-moz-document regexp("((.*\\.(png|jpg|jpeg|gif|tiff|bmp|ico|PNG|JPG|JPEG|GIF|TIFF|BMP|ICO))|(^data:image/.*)|(.*/attachment\.php[?]attachmentid=[0-9]+.*)|(about:logo))") {
+
+  /* site background */
+  html:not([id]):not([class]):not([lang]):not([dir]):not([xmlns]) >
+  body:not([id]):not([class]):not([lang]):not([dir]):not([style]):not([title]):not([bgcolor]):not([text]):not([link]):not([onload]) {
+    background-image: none !important; /* remove noisy background */
+    background-color: #191415 !important; /* change background color */
+  }
+
+  /* transparent image background */
+  img.decoded {
+    background-image: none !important; /* remove noisy background */
+    background-color: #191415 !important; /* change background color */
+  }
+
+  /* transparent image background when hovering (checkerboard) */
+  img.decoded:hover {
+    background-color: #191415 !important; /* change background color (here: color of dark squares) */
+  }
+}
+
+body {
+   --newtab-background-color: #191415 !important;
+   --newtab-background-color-secondary: #191415 !important;
+   --newtab-text-primary-color: #a7a7a7 !important;
+   --newtab-primary-element-text-color: #a7a7a7;
+   --newtab-wordmark-color: #960234 !important;
+   --newtab-status-success: #718467 !important;
+ }
+

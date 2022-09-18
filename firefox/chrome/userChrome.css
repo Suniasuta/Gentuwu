@@ -1,0 +1,40 @@
+#main-window {
+  background: #191415;
+}
+/*urlbar background*/
+#TabsToolbar, #nav-bar {
+  background: #191415 !important;
+}
+#nav-bar {
+  margin-top: 10px !important;
+  box-shadow: none !important;
+  min-height: 15px !important;
+  height: 15px !important;
+}
+#downloads-button #downloads-indicator-icon {
+  margin-bottom: 15px !important;
+  margin-top: -10px !important;
+}
+
+/*tab customization*/
+tab[selected="true"] .tab-content {
+  color: #7a7a7a !important;
+  box-shadow: none !important;
+}
+tab[selected="true"] .tab-background {
+  background: #191415 !important;
+  box-shadow: none !important;
+}
+.tab-content {
+  color: #902345;
+}
+.tab-line {
+  height: 10px !important;
+}
+:root {
+  --tab-toolbar-navbar-overlap: 0px !important;
+  --tab-min-height: 15px !important;
+  --tab-block-margin: 0px !important;
+}
+#TabsToolbar {height: var(--tab-min-height) !important;}
+
